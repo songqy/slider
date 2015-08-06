@@ -1,0 +1,94 @@
+
+body{
+  background-color:#A9A9A9;
+  margin:30px;
+}
+
+h1{
+  text-align:center;
+  color:#DC143C;
+  font-family:Arial;
+}
+
+#name{
+  font-size:23px;
+  text-indent:40em;
+  font-family:Georgia;
+  color:blue;
+  margin:0;
+  padding:0;
+}
+
+#imageslider{
+  overflow:hidden;
+  height:500px;
+  width:750px;
+  position:relative;
+  left:240px;
+  border:10px;
+  border-style:groove;
+}
+
+#imageslider ul{
+  list-style-type:none;
+  padding:0;
+  width:10000px;
+  margin:0;
+}
+
+#imageslider ul li{
+  float:left;
+  display:block;
+  position:relative;
+  left:0px;
+  height:500px;
+  width:750px;
+
+}
+
+img{
+  height:100%;
+  width:100%;
+}
+
+button{
+  height:90px;
+  width:55px;
+  font-size:20px;
+  padding:0;
+  margin:0;
+  opacity:0;
+  background-position:50% 50%;
+  background-repeat:none;
+}
+
+#prebtn{
+  position:absolute;
+  left:0;
+  top:250px;
+  background-image:url("./images/group2/01.jpg");
+}
+
+#nextbtn{
+  position:absolute;
+  right:0;
+  top:250px;
+  background-image:url("./images/group2/02.jpg");
+}
+
+#select ul{
+  list-style-type:none;
+  padding:0;
+  margin:0;
+  position:relative;
+  left:460px;
+  width:600px;
+}
+
+#select ul li{
+  float:left;
+  background-image:url("./images/group2/04.jpg");
+  width:30px;
+  height:30px;
+  margin:10px;
+}
