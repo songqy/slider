@@ -13,8 +13,6 @@ var picmove_pre = 15;//每次移动的像素
 
 var select = document.getElementsByClassName("select");
 var imgul = document.getElementById("imgul");
-var prebtn = document.getElementById("prebtn");
-var nextbtn = document.getElementById("nextbtn");
 
 //////////////////////////////////////////////////////////
 //为HTML绑定事件
@@ -23,15 +21,13 @@ window.onload = function(){
   for(var i = 0; i < select.length; ++i){
     select[i].onmouseover = function(){dotmouseover(this);}
   }
-  imgul.onmouseover = function(){imageover();}
-  imgul.onmouseout = function(){imageout();}
+  $("#imgul").mouseover(function(){imageover();});
+  $("#imgul").mouseout(function(){imageout();});
   imgul.onmousewheel = function(){imagewheel();}
-  prebtn.onclick = function(){pre();}
-  prebtn.onmouseover = function(){buttonover(this);}
-  prebtn.onmouseout = function(){buttonout(this);}
-  nextbtn.onclick = function(){next();}
-  nextbtn.onmouseover = function(){buttonover(this);}
-  nextbtn.onmouseout = function(){buttonout(this);}
+  $("#prebtn").click(function(){pre();});
+  $("button").mouseover(function(){buttonover(this);});
+  $("button").mouseout(function(){buttonout(this);});
+  $("#nextbtn").click(function(){next();});
 
   setTimeout(auto_move,5000);
 }
